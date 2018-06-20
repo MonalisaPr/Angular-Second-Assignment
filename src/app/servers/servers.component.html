@@ -1,0 +1,13 @@
+<label>Server  Name</label>
+<input 
+type="text"
+class="form-control"
+[(ngModel)]="userName">
+<p>{{ userName }}</p>
+<button
+class="btn btn-primary"
+[disabled]="!createUsername"
+(click)="onCreateUser()">Username</button>
+<p>{{ usernameCreationStatus}}</p>
+<app-server></app-server>
+<app-server></app-server>
